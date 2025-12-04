@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipe Submit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index(Recipe Submit Style).css">
+        <link rel="stylesheet" href="./index(Tab styling).css">
+    </head>
+    <body>
+        <div class="tab">
+            <a href="./index(Home).html">HOME</a>
+            <a href="./index(Recipe List).html">RECIPES</a>
+            <a href="./index(Recipe Submit).html" class="active">SHARE</a>
+        </div>
+        <br><br>
+        <center><u><b><h1>Recipe Sharing</h1></b></u></center>
+        <center>
+            <form id="myform">
+                <label for="Rname"><u>RECIPE FOR:</u></label><br>
+                <input type="text" style="text-align: center;" size="23" class="details" id="Rname" name="Rname" placeholder="Enter the name of your Recipe" required>
+                <br><br>
+
+                <label for="About"><u>ABOUT THE RECIPE:</u></label><br>
+                <textarea style="text-align: center;" rows="20" cols="50" class="details" id="About" name="About" placeholder="Enter About the Recipe" required></textarea>
+                <br><br>
+
+                <label for="Ingredients"><u>INGREDIENTS NEEDED:</u></label><br>
+                <textarea style="text-align: center;" rows="25" cols="50" class="details" id="Ingredients" name="Ingredients" placeholder="Enter the Ingredients needed for the Recipe" required></textarea>
+                <br><br>
+
+                <label for="Instruction"><u>HOW TO MAKE:</u></label><br>
+                <textarea style="text-align: center;" rows="25" cols="50" class="details" id="Instruction" name="Instruction" placeholder="Enter How to Make this delicious cuisine" required></textarea>
+                <br><br>
+
+                <label for="Nutrition"><u>RECIPE'S NUTRITION:</u></label><br>
+                <textarea style="text-align: center;" rows="20" cols="50" class="details" id="Nutrition" name="Nutrition" placeholder="Enter About the Recipe's Nutrition" required></textarea>
+                <br><br>
+
+                <label for="image">Enter a pic of the finished cuisine:</label><br>
+                <input type="file" class="details" id="image" name="image" required>
+                <br><br>
+
+                <input type="submit" value="Submit Recipe" style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            </form>
+        </center>
+
+        <script type="text/javascript">
+            document.getElementById('myform').onsubmit = function(event) {
+                event.preventDefault(); // prevent actual submission for demo
+                alert("Your Recipe has been sent to the admin to be reviewed before deployment. Please wait for further contact.");
+            };
+        </script>
+    </body>
+</html>
