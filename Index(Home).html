@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./index(Tab styling).css">
+    <style>
+      /* Hero Banner Styling */
+      /* Hero Banner Styling */
+      .hero {
+        position: relative;
+        background-image: url('./iindex\(A\ cloud\ eggs\).png'); /* Replace with your image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* Full screen */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      /* Gradient overlay for a modern look */
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.3)
+        );
+      }
+
+      /* Content styling */
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 700px;
+        padding: 20px;
+        animation: fadeInUp 1.5s ease-out;
+      }
+
+      /* Headline */
+      .hero h1 {
+        font-size: 3.5em;
+        margin-bottom: 20px;
+        font-family: 'Segoe UI', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      }
+
+      /* Subtext */
+      .hero p {
+        font-size: 1.3em;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        color: #f1f1f1;
+      }
+
+      /* Button styling */
+      .hero button {
+        padding: 14px 30px;
+        font-size: 1.1em;
+        background: linear-gradient(135deg, #ff7043, #ff5722);
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+      }
+
+      .hero button:hover {
+        background: linear-gradient(135deg, #e64a19, #d84315);
+        transform: scale(1.05);
+      }
+
+      /* Simple fade-in animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tab">
+      <a href="./index(Home).html" class="active">HOME</a>
+      <a href="./index(Recipe List).html">RECIPES</a>
+      <a href="./index(Recipe Submit).html">SHARE</a>  
+    </div>
+    <!-- Hero Banner -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Recipe of the Week</h1>
+        <p>Try our delicious and simple Cloud Eggs, packed with flavor and love.</p>
+        <a href="./index(Eggs Cloud).html"><button>View Recipe</button></a>
+      </div>
+    </section>
+  </body>
+</html>
